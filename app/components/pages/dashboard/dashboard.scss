@@ -1,0 +1,58 @@
+@import '../../../globals.scss';
+
+#dashboard_page {
+    height: 100vh;
+
+    .heading {
+        grid-area: 1 / 5 / 2 / 25;
+        display: flex;
+        gap: $spacing_small;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .table {
+        grid-area: 2 / 5 / 3 / 15;
+        padding-right: $spacing_large;
+
+        span {
+            color: $color_text_tertiary;
+        }
+    }
+
+    .sidebar {
+        grid-area: 1 / 1 / 3 / 5;
+        background: $color_white;
+        padding: $spacing_large;
+        gap: $spacing_small;
+        border-right: 1px solid $color_neutral_200;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .navigation_links,
+        .finantial_overview,
+        .settings_and_configuration,
+        .support_and_documentation {
+            display: flex;
+            flex-direction: column;
+            gap: $spacing_small;
+
+            div {
+                display: flex;
+                gap: $spacing_small;
+                align-items: center;
+                transition: opacity 0.3s ease-in-out;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .logout_component {
+            width: max-content;
+        }
+    }
+}

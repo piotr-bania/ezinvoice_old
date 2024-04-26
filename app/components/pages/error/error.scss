@@ -1,0 +1,14 @@
+@import '../../../globals.scss';
+
+#error_page {
+    height: 100dvh;
+
+    .error_component {
+        grid-area: 1 / 1 / 2 / 25;
+        display: flex;
+        gap: $spacing_small;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

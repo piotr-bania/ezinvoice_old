@@ -1,0 +1,27 @@
+@import '../../globals.scss';
+
+#signup_page {
+    height: 100dvh;
+    align-content: center;
+
+    .signin_component {
+        grid-area: 1 / 1 / 2 / 25;
+        margin: auto;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cta {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .back_home {
+        grid-area: 2 / 1 / 3 / 25;
+        margin: auto;
+    }
+}
